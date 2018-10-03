@@ -46,9 +46,11 @@ class Song
   end 
   
   def self.alphabetical
-   self.all.sort_by do |song|
+   sorted = self.all.sort_by do |song|
      song 
    end 
+   sorted 
+   
   end 
 
   
