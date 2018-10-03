@@ -56,8 +56,7 @@ class Song
    split_two = split_one[0].split(" - ")
    name = split_two[1]
    Song.create_by_name(name)
-   self.artist_name = split_two[0]
-   self 
+   binding.pry 
     end 
   
 
