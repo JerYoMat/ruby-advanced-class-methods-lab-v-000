@@ -58,6 +58,7 @@ class Song
     name = name_and_artist[1]
     Song.create_by_name(name)
     self.artist_name = artist 
+    self 
   end 
   
 
