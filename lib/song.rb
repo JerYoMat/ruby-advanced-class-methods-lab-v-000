@@ -56,7 +56,7 @@ class Song
    data = split_one.pop.split(" - ")
    Song.new_by_name(data[0])
    self.artist_name = data[1]
-   
+   self 
   end 
   
 
