@@ -52,13 +52,8 @@ class Song
   end 
   
   def self.new_from_filename(file)
-    no_file_format = file.split(".mp")
-    name_and_artist = no_file_format.split(" - ")
-    artist = name_and_artist[0]
-    name = name_and_artist[1]
-    Song.create_by_name(name)
-    self.artist_name = artist 
-    self 
+    file.split(" - ").split('.')
+  
   end 
   
 
