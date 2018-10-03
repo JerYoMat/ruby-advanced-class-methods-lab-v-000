@@ -46,11 +46,9 @@ class Song
   end 
   
   def self.alphabetical
-    sorted_songs = self.all.sort_by(name)
-    sorted_songs.each do |song|
-      song.name 
-    end 
-    
+   self.all.sort_by do |song|
+     song 
+   end 
   end 
 
   
