@@ -51,7 +51,7 @@ class Song
    end 
   end 
   
-  def self.create_from_filename(file)
+  def self.new_from_filename(file)
    split_one = file.split(".")
    split_two = split_one[0].split(" - ")
    name = split_two[1]
@@ -60,6 +60,14 @@ class Song
    new 
     end 
   
-
+  def self.creat_from_filename(file)
+   split_one = file.split(".")
+   split_two = split_one[0].split(" - ")
+   name = split_two[1]
+   new = Song.create_by_name(name)
+   new.artist_name = split_two[0]
+   new 
+    end 
+  
 
 end
