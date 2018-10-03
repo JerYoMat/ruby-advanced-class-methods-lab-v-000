@@ -52,7 +52,7 @@ class Song
   end 
   
   
-  
+def self.  
 
 
 end
