@@ -54,7 +54,7 @@ class Song
   def self.new_from_filename(file)
    split_one = file.split(".")
    data = split_one.pop
-   
+   binding.pry 
   
     end 
   
