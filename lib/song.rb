@@ -57,6 +57,7 @@ class Song
    name = split_two[1]
    Song.create_by_name(name)
    self.artist_name = split_two[0]
+   self 
     end 
   
 
