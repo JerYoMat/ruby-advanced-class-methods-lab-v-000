@@ -53,7 +53,7 @@ class Song
   
   def self.new_from_filename(file)
    file.chop(4)
-   
+   binding.pry 
   end 
   
 
