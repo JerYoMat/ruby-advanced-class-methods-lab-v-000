@@ -46,7 +46,10 @@ class Song
   end 
   
   def self.alphabetical
-    
+   self.all.sort_by do |object|
+     object.name 
+     
+   end 
    binding.pry 
   end 
 
