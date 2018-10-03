@@ -50,7 +50,10 @@ class Song
      object.name 
    end 
   end 
-
+  
+  def self.new_from_filename(file)
+    file.chomp()
+  end 
   
 
 end
